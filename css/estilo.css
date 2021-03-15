@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+* {
+  font-family: 'Oswald', sans-serif;
+}
+.p {
+  border-bottom: 1px solid black;
+}
+.localiza {
+  background-color: black;
+  color: white;
+  padding: 5px 0;
+  margin: 0;
+}
+.nave {
+  background-color: white;
+}
+ul li a{
+  color: black;
+}
+.a {
+  color: black;
+}
+.img {
+  padding: 50px 0;
+}
+
+.div-logo {
+    background-Color: #432B49;
+}
+.a {
+    background-Color: #432B49;
+}
