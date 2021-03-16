@@ -8,3 +8,4 @@ function gera() {
 	url.href = api
 	url.innerHTML = api;
 }
+

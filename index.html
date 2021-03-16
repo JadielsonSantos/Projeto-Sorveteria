@@ -25,21 +25,21 @@
 
   <div class="nav-wrapper">
 
-    <nav class="nave a">
-      <a href="#" data-activates="mobile-demo" class="button-collapse"><i id="icon"
+    <nav class="nave a" id="ho">
+      <a href="#" data-activates="mobile-demo" class="button-collapse" ><i id="icon"
           class="material-icons a">menu</i></a>
       <a class="right brand-logo white-text" href="#!">SORVETERIA</a>
       <ul class="left li hide-on-med-and-down">
-        <li><a class="white-text" href="#">HOME</a></li>
+        <li><a class="white-text" href="#inicio">HOME</a></li>
         <li><a class="white-text" href="#sabores">SABORES</a></li>
-        <li><a class="white-text" href="#promocao">PROMOÇÕES</a></li>
         <li><a class="white-text" href="#somos">QUEM SOMOS</a></li>
+        <li><a class="white-text" href="#promocao">PROMOÇÕES</a></li>
         <li><a class="white-text" href="#contatos">CONTATOS</a></li>
       </ul>
       <ul class="side-nav center" id="mobile-demo">
         <li><a href="#sabores">SABORES</a></li>
-        <li><a href="#promocao">PROMOÇÕES</a></li>
         <li><a href="#somos">QUEM SOMOS</a></li>
+        <li><a href="#promocao">PROMOÇÕES</a></li>
         <li><a href="#contatos">CONTATOS</a></li>
 
       </ul>
@@ -180,7 +180,7 @@
     </div>
     <div class="footer-copyright">
       <span class="container">© 2010 - 2020</span>
-      <span class="container"><a href="#">INICIO</a></span>
+      <span class="container"><a href="#ho">INICIO</a></span>
     </div>
   </footer>
 
@@ -200,6 +200,14 @@
     $('.carousel.carousel-slider').carousel({
       fullWidth: true
     });
+    $("nav a").click(function(e) {
+      e.preventDefault();
+      var id = $(this).attr("href"),
+      targetOffset = $(id).offset().top;
+      $("html, body").animate({
+        scrollTop: targetOffset
+      }, 800)
+    })
   </script>
 </body>
 </html>
